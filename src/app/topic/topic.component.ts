@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
+import { TopicService } from './topic.service';
+import { Topic } from './topic';
 
 @Component({
   selector: 'app-topic',
@@ -7,9 +11,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopicComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private route: ActivatedRoute,
+    private location: Location,
+    private topicService: TopicService
+  ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
+    this.getTopic();
+  }
+
+  getTopic(): void {
+    const title = this.route.snapshot.paramMap.get('title');
+    console.log('routed title', title);
   }
 
 }

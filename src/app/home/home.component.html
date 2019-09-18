@@ -1,6 +1,8 @@
-<h1>We're home</h1>
-<ul>
+<h1>John Wiki</h1>
+<nav>
+  <ul>
     <li *ngFor="let topic of topicList">
-      <span> {{topic.title}} </span>
+      <a routerLink="/topic/{{topic.title}}"> {{topic.title}} </a>
     </li>
   </ul>
+</nav>
