@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.topicService.getTopics().subscribe((data: any) => {
-      this.topicList =  this.topicList.concat(data);
+      this.topicList = this.topicList.concat(data);
     });
   }
 

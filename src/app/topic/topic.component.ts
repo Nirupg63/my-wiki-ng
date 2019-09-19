@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { TopicService } from './topic.service';
-import { Topic } from './topic';
 
 @Component({
   selector: 'app-topic',
@@ -24,6 +23,6 @@ export class TopicComponent implements OnInit {
   getTopic(): void {
     const title = this.route.snapshot.paramMap.get('title');
     console.log('routed title', title);
+    // send request to backend asking for top 5 recent articles under this topic
   }
-
 }
