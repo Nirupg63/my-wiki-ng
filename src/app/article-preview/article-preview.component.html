@@ -1,5 +1,5 @@
 <div *ngIf="article">
-  <img src="" alt="preview image">
-  <h2>title</h2>
-  <p>short description</p>
+  <img src={{article.img_url}} alt="preview image">
+  <h2>{{article.title}}</h2>
+  <p>{{article.short_description}}</p>
 </div>

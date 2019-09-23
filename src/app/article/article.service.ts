@@ -8,7 +8,9 @@ export class ArticleService {
 
   constructor(private http: HttpClient) { }
 
-  getArticlesByTopic() {
-    return this.http.get('http://localhost:7171/topic/listall');
+  getArticlesByTopic(topic: string) {
+    return this.http.post('http://localhost:7171/article/topic', {
+      topic
+    });
   }
 }

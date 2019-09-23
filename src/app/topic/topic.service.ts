@@ -9,6 +9,6 @@ export class TopicService {
   constructor(private http: HttpClient) { }
 
   getTopics() {
-    return this.http.get('http://localhost:7171/topic/listall');
+    return this.http.get('http://localhost:7171/topic/all');
   }
 }

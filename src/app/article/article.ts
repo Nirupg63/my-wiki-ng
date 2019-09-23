@@ -1,0 +1,6 @@
+export class Article {
+    id: string;
+    title: string;
+    img_url: string;
+    short_description: string;
+}
