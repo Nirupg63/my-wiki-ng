@@ -14,4 +14,8 @@ export class ArticlePreviewComponent implements OnInit {
   ngOnInit() {
   }
 
+  articleSelection(article: Article) {
+    console.log('Article selected ' + article.title);
+  }
+
 }

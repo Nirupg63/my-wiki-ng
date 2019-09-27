@@ -1,0 +1,19 @@
+.article-preview{
+    height: 400px;
+    width: 500px;
+}
+
+.article-preview img {
+    max-height:70%; 
+    max-width:100%;
+}
+
+.article-preview h2 {
+    max-height:20%; 
+    max-width:100%;
+}
+
+.article-preview p {
+    max-height:10%; 
+    max-width:100%;
+}
