@@ -29,7 +29,6 @@ export class TopicComponent implements OnInit {
     const title = this.route.snapshot.paramMap.get('title');
     // send request to backend asking for top 5 recent articles under this topic
     this.articleService.getArticlesByTopic(title).subscribe((data: any) => {
-      console.log(data);
       this.articleList = this.articleList.concat(data);
     })
   }

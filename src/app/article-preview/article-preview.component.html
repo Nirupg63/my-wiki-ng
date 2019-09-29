@@ -1,5 +1,7 @@
 <div *ngIf="article" class="article-preview" (click)="articleSelection(article)">
-  <img src={{article.img_url}} alt="preview image">
-  <h2>{{article.title}}</h2>
-  <p>{{article.short_description}}</p>
+  <a routerLink="/article/{{article.uuid}}">
+    <img src={{article.img_url}} alt="preview image">
+    <h2>{{article.title}}</h2>
+    <p>{{article.short_description}}</p>
+  </a>
 </div>

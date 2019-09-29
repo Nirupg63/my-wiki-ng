@@ -3,4 +3,6 @@ export class Article {
     title: string;
     img_url: string;
     short_description: string;
+    content: string;
+    uuid: string;
 }

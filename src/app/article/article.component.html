@@ -1,3 +1,7 @@
-<p>
-  article works!
-</p>
+<div *ngIf="article" class="article">
+  <img src={{article.img_url}} alt="preview image">
+  <h2>{{article.title}}</h2>
+  <p>{{article.short_description}}</p>
+  <br>
+  <p>{{article.content}}</p>
+</div>
